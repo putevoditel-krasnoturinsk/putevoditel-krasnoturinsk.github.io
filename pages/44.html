@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Краснотурьинский театр кукол</title>
+	
+	<!-- the CSS for Smooth Div Scroll -->
+	<link rel="Stylesheet" type="text/css" href="../css/smoothDivScroll.css" />
+	
+	<!-- Styles for my specific scrolling content -->
+	<style type="text/css">
+
+		#makeMeScrollable
+		{
+			width:100%;
+			height: 330px;
+			position: relative;
+		}
+		
+		/* Replace the last selector for the type of element you have in
+		   your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+		   if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+		#makeMeScrollable div.scrollableArea img
+		{
+			position: relative;
+			float: left;
+			margin: 0;
+			padding: 0;
+			/* If you don't want the images in the scroller to be selectable, try the following
+			   block of code. It's just a nice feature that prevent the images from
+			   accidentally becoming selected/inverted when the user interacts with the scroller. */
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+		}
+	</style>
+<style>
+html,body{margin:0;padding:0}
+body{font: 100% arial,sans-serif;text-align:center}
+p{margin:0 10px 10px}
+a{display:block;color: #981793;padding:10px}
+div#header h2{height:80px;line-height:80px;margin:0;
+  padding-left:10px;background: #EEE;color: #79B30B}
+div#container{text-align:left}
+div#content p{line-height:1.4}
+div#navigation{background:#B9CAFF}
+div#extra{background:#FF8539}
+div#footer{background: #333;color: #FFF}
+div#footer p{margin:0;padding:5px 10px}
+ 
+div#container{width:80%;margin:0 auto}
+div#navigation{float:left;width:100%}
+div#footer{clear:both;width:80%}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+<div id="header"><h2>Краснотурьинский театр кукол</h2></div>
+<div id="wrapper">
+<div id="content">
+<p><strong>Адрес: </strong>г. Краснотурьинск, ул. Ленина 86А</p>
+<p><strong>Телефон: </strong>8 (34384) 3-47-40</p>
+<p><strong>Часы работы: </strong>Пн-Пт 08:00-17:00, Сб-Вс 10:00-14:00</p>
+<p><strong></strong>
+Краснотурьинский театр кукол стал четвёртым профессиональным театром кукол в Свердловской области. 
+Фактическое открытие театра состоялось 16 июня 1979 года, большим праздником, который сопровождался костюмированным карнавалом и стал культурным событием для маленького Ленинграда, именно так любя называют свой город краснотурьинцы.Краснотурьинский театр кукол функционирует в статусе автономного учреждения с 2010 года и активно ищет новые возможности для расширения спектра оказываемых услуг населению, включаясь в различные социальные программы.
+<div id="navigation">
+<p>
+<div id="makeMeScrollable">
+		<img src="../images/44/1.jpg" alt="Demo image" id="field" />
+		<img src="../images/44/2.jpg" alt="Demo image" id="gnome" />
+		<img src="../images/44/3.jpg" alt="Demo image" id="pencils" />
+		<img src="../images/44/4.jpg" alt="Demo image" id="gnome1" />
+		<img src="../images/44/5.jpg" alt="Demo image" id="pencils1" />
+	</div>
+</p>
+</div>
+
+</div>
+	
+
+	<!-- LOAD JAVASCRIPT LATE - JUST BEFORE THE BODY TAG 
+	     That way the browser will have loaded the images
+		 and will know the width of the images. No need to
+		 specify the width in the CSS or inline. -->
+
+	<!-- jQuery library - Please load it from Google API's -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+	<!-- jQuery UI (Custom Download containing only Widget and Effects Core)
+	     You can make your own at: http://jqueryui.com/download -->
+	<script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+	
+	<!-- Latest version (3.1.4) of jQuery Mouse Wheel by Brandon Aaron
+	     You will find it here: https://github.com/brandonaaron/jquery-mousewheel -->
+	<script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+	<!-- jQuery Kinectic (1.8.2) used for touch scrolling -->
+	<!-- https://github.com/davetayls/jquery.kinetic/ -->
+	<script src="../js/jquery.kinetic.min.js" type="text/javascript"></script>
+
+	<!-- Smooth Div Scroll 1.3 minified-->
+	<script src="../js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+
+	<!-- If you want to look at the uncompressed version you find it at
+	     js/jquery.smoothDivScroll-1.3.js -->
+
+	<!-- Plugin initialization -->
+	<script type="text/javascript">
+		// Initialize the plugin with no custom options
+		$(document).ready(function () {
+			// None of the options are set
+			$("div#makeMeScrollable").smoothDivScroll({
+				autoScrollingMode: "onStart"
+			});
+		});
+	</script>
+
+</body>
+</html>
